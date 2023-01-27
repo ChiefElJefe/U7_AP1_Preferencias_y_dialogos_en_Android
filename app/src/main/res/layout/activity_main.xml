@@ -17,4 +17,22 @@
             app:menu="@menu/barra_menu_top"
             style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
     </com.google.android.material.appbar.AppBarLayout>
+    
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:text="Las opciones del menu"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
